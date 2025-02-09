@@ -1,4 +1,4 @@
-name: Daily Commute
+name: Daily Commit at 22f3000713@ds.study.iitm.ac.in
 
 on:
   schedule:
@@ -16,17 +16,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install uv
-        uses: astral-sh/setup-uv@v5
-
-      - name: Run scraper
-        run: | # python
-          uv run --with httpx,lxml,cssselect python scrape.py
-
       - name: Commit and push changes
         run: |
           git config --local user.email "22f3000713@ds.study.iitm.ac.in"
           git config --local user.name "github-actions[bot]"
           git add *.json
-          git commit -m "Update Daily Commute" || exit 0
+          git commit -m "Update Daily Commute 22f3000713@ds.study.iitm.ac.in" || exit 0
           git push
