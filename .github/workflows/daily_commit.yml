@@ -3,7 +3,7 @@ name: Daily Commit at 22f3000713@ds.study.iitm.ac.in
 on:
   schedule:
     # Runs at 00:00 UTC every day
-    - cron: "0 0 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch: # Allow manual triggers
 
 jobs:
