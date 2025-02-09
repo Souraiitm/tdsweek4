@@ -3,7 +3,7 @@ name: Daily Commit at 22f3000713@ds.study.iitm.ac.in
 on:
   schedule:
     # Runs at 00:00 UTC every day
-    - cron: "0 13 * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch: # Allow manual triggers
 
 jobs:
@@ -13,10 +13,10 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repository at 22f3000713@ds.study.iitm.ac.in
         uses: actions/checkout@v4
 
-      - name: Commit and push changes
+      - name: Commit and push changes at 22f3000713@ds.study.iitm.ac.in
         run: |
           git config --local user.email "22f3000713@ds.study.iitm.ac.in"
           git config --local user.name "github-actions[bot]"
